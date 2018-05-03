@@ -1,6 +1,6 @@
 # phash-gif
 
-> Perceptual GIF hashing to easily find near-duplicate GIFs.
+> Perceptual GIF hashing for easily finding near-duplicate GIFs.
 
 [![NPM](https://img.shields.io/npm/v/phash-gif.svg)](https://www.npmjs.com/package/phash-gif) [![Build Status](https://travis-ci.org/transitive-bullshit/phash-gif.svg?branch=master)](https://travis-ci.org/transitive-bullshit/phash-gif) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 

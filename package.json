@@ -1,7 +1,7 @@
 {
   "name": "phash-gif",
   "version": "0.0.1",
-  "description": "Perceptual GIF hashing to easily find near-duplicate GIFs.",
+  "description": "Perceptual GIF hashing for easily finding near-duplicate GIFs.",
   "main": "index.js",
   "repository": "transitive-bullshit/phash-gif",
   "author": "Travis Fischer <travis@automagical.ai>",
