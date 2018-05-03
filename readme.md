@@ -47,7 +47,7 @@ Type: `String`
 
 Path to a GIF file.
 
-### phash.compare(hash1, hash2)
+### pHashGIF.compare(hash1, hash2)
 
 Returns: `Promise<Number>`
 
