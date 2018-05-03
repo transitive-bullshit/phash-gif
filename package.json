@@ -1,0 +1,33 @@
+{
+  "name": "phash-gif",
+  "version": "0.0.1",
+  "description": "Perceptual GIF hashing to easily find near-duplicate GIFs.",
+  "main": "index.js",
+  "repository": "transitive-bullshit/phash-gif",
+  "author": "Travis Fischer <travis@automagical.ai>",
+  "license": "MIT",
+  "scripts": {
+    "test": "ava -v && standard"
+  },
+  "engines": {
+    "node": ">=8"
+  },
+  "keywords": [
+    "phash",
+    "image",
+    "perceptual",
+    "hash",
+    "imagemagick"
+  ],
+  "devDependencies": {
+    "ava": "^0.25.0",
+    "standard": "^11.0.0"
+  },
+  "dependencies": {
+    "gif-extract-frames": "^1.0.2",
+    "p-exiftool": "^1.0.1",
+    "phash-im": "^1.0.0",
+    "rmfr": "^2.0.0",
+    "tempy": "^0.2.1"
+  }
+}
