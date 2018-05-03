@@ -21,14 +21,14 @@ exports.compute = async (input) => {
 
   if (isAnimated) {
     const frames = results.shape[0]
-    const ff = 0
-    const mf = (frames / 2) | 0
-    const lf = Math.max(frames - 1, 0)
+    const firstFrame = 0
+    const middleFrame = (frames / 2) | 0
+    const lastFrame = Math.max(frames - 1, 0)
 
     const hashes = await Promise.all([
-      pHash.compute(path.join(directory, filename.replace('%d', ff))),
-      pHash.compute(path.join(directory, filename.replace('%d', mf))),
-      pHash.compute(path.join(directory, filename.replace('%d', lf)))
+      pHash.compute(path.join(directory, filename.replace('%d', firstFrame))),
+      pHash.compute(path.join(directory, filename.replace('%d', middleFrame))),
+      pHash.compute(path.join(directory, filename.replace('%d', lastFrame)))
     ])
 
     result = hashes[0].concat(hashes[1]).concat(hashes[2])
@@ -36,7 +36,6 @@ exports.compute = async (input) => {
     result = await pHash.compute(path.join(directory, filename.replace('%d', 0)))
   }
 
-  // console.log(input, directory)
   await rmfr(directory)
   return result
 }
