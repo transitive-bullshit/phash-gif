@@ -1,0 +1,3 @@
+- bubbles [source](https://giphy.com/gifs/ycagKBYEmaili)
+- ippo [source](https://giphy.com/gifs/ippo-makunouchi-espiritu-de-lucha-aHjQozblGMfJu)
+- kitten [source](https://giphy.com/gifs/cat-kitten-kids-Q56ZI04r6CakM/media)
