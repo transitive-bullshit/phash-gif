@@ -4,43 +4,48 @@
 
 [![NPM](https://img.shields.io/npm/v/phash-gif.svg)](https://www.npmjs.com/package/phash-gif) [![Build Status](https://travis-ci.org/transitive-bullshit/phash-gif.svg?branch=master)](https://travis-ci.org/transitive-bullshit/phash-gif) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
+**Note**: this module is currently experimental and does not produce expected results some of the time.
+
+
 ## Install
 
 - Install a recent version of [imagemagick](http://imagemagick.org) >= `v7` (`brew install imagemagick` on Mac OS).
 
 ```bash
 npm install --save phash-gif
-# or
-yarn add phash-gif
 ```
 
 
 ## Usage
 
 ```js
-const phash = require('phash-gif')
+const pHashGIF = require('phash-gif')
 
-const hash1 = await phash.compute('./media/lena.png')
-const hash2 = await phash.compute('./media/barbara.png')
+const hash1 = await pHashGIF.compute('./media/bubbles.gif')
+const hash2 = await pHashGIF.compute('./media/bubbles-gifski.gif')
 
-const diff = await phash.compare(hash1, hash2)
+const diff = await pHashGIF.compare(hash1, hash2)
 ```
 
 
 ## API
 
-### phash.compute(input)
+### pHashGIF.compute(input)
 
 Returns: `Promise<Array<Number>>`
 
-Computes the perceptual hash of the given image. Note that the result will be an array of 42 floating point values, corresponding to the 7 image moments comprised of 2 points each across 3 color channels RGB (`7 * 2 * 3 = 42`).
+Computes a perceptual hash of the given GIF.
+
+For animated gifs, the result will be an array of 126 floating point values, corresponding to the three image hashes of the first, middle, and last frames of the input gif.
+
+For static gifs, the result will be an array of 42 floating point values, the same as returned by [phash-im](https://github.com/transitive-bullshit/phash-im).
 
 #### input
 
 Type: `String`
 **Required**
 
-Path to an image file.
+Path to a GIF file.
 
 ### phash.compare(hash1, hash2)
 
@@ -65,7 +70,7 @@ Perceptual hash of second image.
 
 ## Related
 
-- [phash-gifagemagick](https://github.com/scienceai/phash-gifagemagick) - Alternate version of this module which parses imagemagick output instead of using json.
+- [phash-im](https://github.com/transitive-bullshit/phash-im) - Perceptual image hashing provided by imagemagick.
 - [pHash](http://www.phash.org/) - A popular open source perceptual hash library.
 
 
