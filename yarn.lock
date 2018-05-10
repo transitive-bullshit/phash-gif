@@ -2859,9 +2859,9 @@ performance-now@^2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/performance-now/-/performance-now-2.1.0.tgz#6309f4e0e5fa913ec1c69307ae364b4b377c9e7b"
 
-phash-im@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/phash-im/-/phash-im-1.0.0.tgz#983a44d0db1b6f5f2dff16b0c9d3b418a1297559"
+phash-im@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/phash-im/-/phash-im-1.0.1.tgz#e356e507fd61c2ef904ed57b6f1094f1987d66d7"
   dependencies:
     execa "^0.10.0"
 

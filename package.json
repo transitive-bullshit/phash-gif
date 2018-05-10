@@ -26,7 +26,7 @@
   "dependencies": {
     "gif-extract-frames": "^1.0.2",
     "p-exiftool": "^1.0.1",
-    "phash-im": "^1.0.0",
+    "phash-im": "^1.0.1",
     "rmfr": "^2.0.0",
     "tempy": "^0.2.1"
   }

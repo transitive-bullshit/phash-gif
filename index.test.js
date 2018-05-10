@@ -7,7 +7,7 @@ const pHashGIF = require('.')
 
 const fixturesPath = path.join(__dirname, `media`)
 
-const EPSILON = 0.06
+const EPSILON = 10
 
 const fixtures = [
   'bubbles',

@@ -4,8 +4,6 @@
 
 [![NPM](https://img.shields.io/npm/v/phash-gif.svg)](https://www.npmjs.com/package/phash-gif) [![Build Status](https://travis-ci.org/transitive-bullshit/phash-gif.svg?branch=master)](https://travis-ci.org/transitive-bullshit/phash-gif) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
-**Note**: this module is currently experimental and does not produce expected results some of the time.
-
 
 ## Install
 
